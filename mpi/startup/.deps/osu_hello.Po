@@ -1,0 +1,50 @@
+osu_hello.o: osu_hello.c /usr/include/stdc-predef.h \
+ /users/hpp/sessions_install_aarch64/include/mpi.h \
+ /opt/gcc/8.2.0/snos/lib/gcc/aarch64-unknown-linux-gnu/8.2.0/include/stddef.h \
+ /users/hpp/sessions_install_aarch64/include/mpi_portable_platform.h \
+ /usr/include/stdio.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-lp64.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /opt/gcc/8.2.0/snos/lib/gcc/aarch64-unknown-linux-gnu/8.2.0/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h
+
+/usr/include/stdc-predef.h:
+
+/users/hpp/sessions_install_aarch64/include/mpi.h:
+
+/opt/gcc/8.2.0/snos/lib/gcc/aarch64-unknown-linux-gnu/8.2.0/include/stddef.h:
+
+/users/hpp/sessions_install_aarch64/include/mpi_portable_platform.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-lp64.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/opt/gcc/8.2.0/snos/lib/gcc/aarch64-unknown-linux-gnu/8.2.0/include/stdarg.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
