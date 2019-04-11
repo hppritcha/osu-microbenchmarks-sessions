@@ -26,7 +26,7 @@ main (int argc, char *argv[])
     options.bench = PT2PT;
     options.subtype = LAT;
     const char pset_name[] = "mpi://world";
-    MPI_Flags flags = MPI_FLAG_THREAD_CONCURRENT;
+    MPI_Flags flags = MPI_FLAG_THREAD_NONCONCURRENT_SINGLE;
     MPI_Group wgroup = MPI_GROUP_NULL;
 
 
