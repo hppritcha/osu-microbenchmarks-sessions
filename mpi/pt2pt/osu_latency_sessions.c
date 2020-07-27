@@ -26,7 +26,6 @@ main (int argc, char *argv[])
     options.bench = PT2PT;
     options.subtype = LAT;
     const char pset_name[] = "mpi://world";
-    MPI_Flags flags = MPI_FLAG_THREAD_NONCONCURRENT_SINGLE;
     MPI_Group wgroup = MPI_GROUP_NULL;
 
 
@@ -42,7 +41,7 @@ main (int argc, char *argv[])
         }
     }
 
-    rc = MPI_Session_init(&flags, MPI_INFO_NULL, MPI_ERRORS_RETURN,
+    rc = MPI_Session_init(MPI_INFO_NULL, MPI_ERRORS_RETURN,
                           &lib_shandle);
     if (rc != MPI_SUCCESS) {
          return -1;

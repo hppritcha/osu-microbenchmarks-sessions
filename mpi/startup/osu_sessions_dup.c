@@ -28,11 +28,10 @@ main (int argc, char *argv[])
     const char pset_name[] = "mpi://world";
     struct timespec tp_before, tp_after;
     long duration = 0, min, max, avg;
-    MPI_Flags flags = MPI_FLAG_THREAD_CONCURRENT;
     MPI_Group wgroup = MPI_GROUP_NULL;
     MPI_Comm comm_array[1000];
 
-    rc = MPI_Session_init(&flags, MPI_INFO_NULL, MPI_ERRORS_RETURN,
+    rc = MPI_Session_init(MPI_INFO_NULL, MPI_ERRORS_RETURN,
                           &lib_shandle);
     if (rc != MPI_SUCCESS) {
          return -1;
