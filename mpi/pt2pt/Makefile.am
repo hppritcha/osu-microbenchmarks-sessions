@@ -7,7 +7,12 @@ SUFFIXES = .cu .cpp
 	$(NVCC) $(NVCFLAGS) $(INCLUDES) $(CPPFLAGS) --output-file $@ $<
 
 pt2ptdir = $(pkglibexecdir)/mpi/pt2pt
-pt2pt_PROGRAMS = osu_bibw osu_bw osu_bw_mt osu_latency osu_mbw_mr osu_multi_lat osu_mbw_mr_sessions osu_latency_sessions
+pt2pt_PROGRAMS = osu_bibw osu_bw osu_bw_mt osu_latency osu_mbw_mr osu_multi_lat
+
+if MPI4_LIBRARY
+    pt2pt_PROGRAMS += osu_mbw_mr_sessions osu_latency_sessions
+endif
+
 
 AM_CFLAGS = -I../../util
 

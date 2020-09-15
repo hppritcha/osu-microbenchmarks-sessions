@@ -1,5 +1,10 @@
 startupdir = $(pkglibexecdir)/mpi/startup
-startup_PROGRAMS = osu_init osu_hello osu_sessions_init osu_comm_dup osu_sessions_dup
+startup_PROGRAMS = osu_init osu_hello osu_comm_dup
+
+if MPI4_LIBRARY
+    startup_PROGRAMS += osu_sessions_init osu_sessions_dup
+endif
+
 
 if EMBEDDED_BUILD
     AM_LDFLAGS =

@@ -86,6 +86,7 @@ AS_IF([test "x$enable_embedded" = xyes], [
        AC_CHECK_FUNC([MPI_Init], [mpi_library=true])
        AC_CHECK_FUNC([MPI_Accumulate], [mpi2_library=true])
        AC_CHECK_FUNC([MPI_Get_accumulate], [mpi3_library=true])
+       AC_CHECK_FUNC([MPI_Session_init], [mpi4_library=true])
        AC_CHECK_FUNC([shmem_barrier_all], [oshm_library=true])
        AC_CHECK_FUNC([upc_memput], [upc_compiler=true])
        AC_CHECK_DECL([upcxx_alltoall], [upcxx_compiler=true], [],
@@ -127,6 +128,7 @@ AS_IF([test "x$oshm_13_library" = xtrue], [
        ])
 AM_CONDITIONAL([MPI2_LIBRARY], [test x$mpi2_library = xtrue])
 AM_CONDITIONAL([MPI3_LIBRARY], [test x$mpi3_library = xtrue])
+AM_CONDITIONAL([MPI4_LIBRARY], [test x$mpi4_library = xtrue])
 AM_CONDITIONAL([CUDA], [test x$build_cuda = xyes])
 AM_CONDITIONAL([CUDA_KERNELS], [test x$build_cuda_kernels = xyes])
 AM_CONDITIONAL([OPENACC], [test x$enable_openacc = xyes])
