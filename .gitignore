@@ -49,6 +49,8 @@ mpi/pt2pt/osu_latency_sessions
 mpi/pt2pt/osu_mbw_mr
 mpi/pt2pt/osu_mbw_mr_sessions
 mpi/pt2pt/osu_multi_lat
+mpi/pt2pt/osu_bibw_sessions
+mpi/pt2pt/osu_bw_sessions
 mpi/startup/osu_comm_dup
 mpi/startup/osu_hello
 mpi/startup/osu_init

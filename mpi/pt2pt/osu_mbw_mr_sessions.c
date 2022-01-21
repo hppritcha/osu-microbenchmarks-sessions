@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
     char *s_buf, *r_buf;
     int numprocs, rank, rc;
     int c, curr_size;
-    const char pset_name[] = "mpi://world";
+    const char pset_name[] = "mpi://WORLD";
     MPI_Group wgroup = MPI_GROUP_NULL;
 
     loop_override = 0;

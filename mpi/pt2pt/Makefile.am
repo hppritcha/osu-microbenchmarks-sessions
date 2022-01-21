@@ -10,9 +10,8 @@ pt2ptdir = $(pkglibexecdir)/mpi/pt2pt
 pt2pt_PROGRAMS = osu_bibw osu_bw osu_bw_mt osu_latency osu_mbw_mr osu_multi_lat
 
 if MPI4_LIBRARY
-    pt2pt_PROGRAMS += osu_mbw_mr_sessions osu_latency_sessions
+pt2pt_PROGRAMS += osu_mbw_mr_sessions osu_latency_sessions osu_bw_sessions osu_bibw_sessions
 endif
-
 
 AM_CFLAGS = -I../../util
 
@@ -26,8 +25,10 @@ endif
 endif
 
 osu_bw_SOURCES = osu_bw.c $(UTILITIES)
+osu_bw_sessions_SOURCES = osu_bw_sessions.c $(UTILITIES)
 osu_bw_mt_SOURCES = osu_bw_mt.c $(UTILITIES)
 osu_bibw_SOURCES = osu_bibw.c $(UTILITIES)
+osu_bibw_sessions_SOURCES = osu_bibw_sessions.c $(UTILITIES)
 osu_latency_SOURCES = osu_latency.c $(UTILITIES)
 osu_latency_sessions_SOURCES = osu_latency_sessions.c $(UTILITIES)
 osu_mbw_mr_SOURCES = osu_mbw_mr.c $(UTILITIES)
